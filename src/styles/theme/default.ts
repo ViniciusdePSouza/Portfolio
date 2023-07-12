@@ -1,7 +1,6 @@
 export const defaultTheme = { 
     COLORS: { 
-        PRIMARY: '#8255CC',
-        SECONDARY: '#2A2337',
+        PRIMARY: '#0F0222',
 
         WHITE: '#FFFFFF',
         WHITE_100: '#F8F5F9',
@@ -12,11 +11,10 @@ export const defaultTheme = {
         GRAY_400:'#2A2337',
 
         RED: '#E13636',
-        GREEN: '#61AD4A',
+        ORANGE: '#FF9C54',
 
-        PURPLE_100:'#B7ACC6',
         PURPLE_200:'#8255CC',
-        PURPLE_300:'#5A32A4',
+        PURPLE_300:'#621ABE',
         PURPLE_400:'#431E8E',
     }
 }
