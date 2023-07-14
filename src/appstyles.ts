@@ -7,16 +7,6 @@ export const ProfileDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  > h1 {
-    font-size: 4rem;
-    font-weight: 700;
-
-    color: ${({ theme }) => theme.COLORS.WHITE_100};
-
-    text-align: center;
-  }
-
   > img {
     width: 16rem;
 
@@ -25,6 +15,16 @@ export const ProfileDiv = styled.div`
     border-radius: 100%;
 
     border: 8px solid ${({ theme }) => theme.COLORS.GRAY_300};
+  }
+
+  
+  > h1 {
+    font-size: 4rem;
+    font-weight: 700;
+
+    color: ${({ theme }) => theme.COLORS.WHITE_100};
+
+    text-align: center;
   }
 
   > p {
@@ -75,5 +75,7 @@ export const SubPunchLineSpan = styled.span`
 
   text-align: center;
 
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 `;
+
+

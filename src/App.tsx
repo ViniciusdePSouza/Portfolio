@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./styles/theme/default";
 import { GlobalStyle } from "./styles/global";
 
-import { ProfileDiv, PunchLineSpan, SubPunchLineSpan} from "./appstyles";
+import { ProfileDiv, PunchLineSpan, SubPunchLineSpan } from "./appstyles";
 
 import profilePicture from "../src/assets/photos/linkedin.jpg";
 
@@ -18,14 +18,18 @@ function App() {
       <Header />
 
       <ProfileDiv>
+
+
         <h1>Oi, Sou o Vinícius!</h1>
 
         <img src={profilePicture} alt="Foto de perfil" />
 
-        <p>
-          Desenvolvedor <br />
-          Front-end
-        </p>
+          <p>
+            Desenvolvedor <br />
+            Front-end
+          </p>
+
+
         <PunchLineSpan>A cada novo desafio uma nova oportunidade</PunchLineSpan>
 
         <SubPunchLineSpan>
@@ -37,7 +41,7 @@ function App() {
         <ProjectsWrapper />
 
         <h2>Contato</h2>
-        
+
         <Contact />
       </ProfileDiv>
     </ThemeProvider>
