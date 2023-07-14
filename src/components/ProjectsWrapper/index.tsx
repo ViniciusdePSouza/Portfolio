@@ -28,7 +28,7 @@ export function ProjectsWrapper() {
       id: 3,
       titlePtbr: "Aplicativo de Academia",
       titleEn: "Gym App",
-      techs: "React Native, Styled Components, NodeJS",
+      techs: "React Native, NodeJS",
       link: "https://github.com/ViniciusdePSouza/iToddy_Gym",
       repo: "https://github.com/ViniciusdePSouza/iToddy_Gym",
       thumb: gymThumb,
