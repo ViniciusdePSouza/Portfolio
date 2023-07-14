@@ -14,7 +14,7 @@ export const defaultTheme = {
         ORANGE: '#FF9C54',
 
         PURPLE_200:'#8255CC',
-        PURPLE_300:'#621ABE',
+        PURPLE_300:'#4728D3',
         PURPLE_400:'#431E8E',
     }
 }

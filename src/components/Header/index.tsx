@@ -4,7 +4,6 @@ import instagramIcon from "../../assets/icons/instagram.png";
 import gitHubIcon from "../../assets/icons/github.png";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import brazilFlag from '../../assets/flags/brazil.png'
-import usFlag from '../../assets/flags/united-states.png'
 
 export function Header() {
   return (
@@ -26,9 +25,6 @@ export function Header() {
       </IconsWrapper>
 
       <Nav>
-        <Link>Projetos</Link>
-        <Link>Habilidades</Link>
-        <Link>Experiência</Link>
         <MailTo href="mailto:dev.souzavinicius@gmail.com" target="_blank">dev.souzavinicius@gmail.com</MailTo>
       </Nav>
     </Container>
