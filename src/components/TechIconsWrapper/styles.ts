@@ -7,8 +7,25 @@ export const Container = styled.div`
   grid-row-gap: 2.4rem; 
 
   margin-top: 8.8rem;
+`
 
-  img {
+export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  > img {
     height: 5rem;
+  }
+
+  >span {
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+
+    margin-top: .8rem;
+    
+    color: ${({theme}) => theme.COLORS.WHITE_100};
   }
 `
