@@ -4,7 +4,11 @@ import roleThumb from "../../assets/thumbs/role.png";
 import gymThumb from "../../assets/thumbs/gym.png";
 import dsThumb from "../../assets/thumbs/design.png";
 
+import { useTranslation } from "../../hooks/translationContext";
+
 export function ProjectsWrapper() {
+  const { language } = useTranslation();
+
   const projects = [
     {
       id: 1,
@@ -42,7 +46,7 @@ export function ProjectsWrapper() {
           <img src={project.thumb} alt="" />
           <FormatDiv>
             <InfoWrapper>
-              <h2>{project.titlePtbr}</h2>
+              <h2>{language === "pt-br" ? project.titlePtbr : project.titleEn }</h2>
               <span>{project.techs}</span>a
             </InfoWrapper>
 

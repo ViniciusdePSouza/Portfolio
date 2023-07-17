@@ -44,12 +44,14 @@ export const WppButton = styled.a`
 
   background-color: #0c011f;
 
-  color: ${({ theme }) => theme.COLORS.WHITE_100};
-  font-size: 1.6rem;
-
   cursor: pointer;
 
   border-radius: 32px;
+
+  > span {
+    color: ${({ theme }) => theme.COLORS.WHITE_100};
+    font-size: 1.6rem;
+  }
 `;
 
 export const WppIcon = styled.img`
@@ -120,12 +122,14 @@ export const MailTo = styled.a`
 
   background-color: ${({ theme }) => theme.COLORS.PURPLE_300};
 
-  font-family: "Inter", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: ${({ theme }) => theme.COLORS.WHITE_100};
-
   border-radius: 8px;
 
   cursor: pointer;
+
+  > span {
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: ${({ theme }) => theme.COLORS.WHITE_100};
+  }
 `;
