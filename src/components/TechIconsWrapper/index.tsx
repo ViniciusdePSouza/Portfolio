@@ -28,8 +28,8 @@ export function TechIconsWrapper() {
 
   return (
     <Container>
-      {techsArray.map((tech) => (
-        <Card>
+      {techsArray.map((tech, index) => (
+        <Card key={tech.id} index={index}>
           <img src={tech.icon} alt={tech.description} key={tech.id} />
           <span>{tech.description}</span>
         </Card>

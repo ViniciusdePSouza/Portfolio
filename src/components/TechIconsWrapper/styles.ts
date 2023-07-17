@@ -1,4 +1,19 @@
-import { styled } from "styled-components";
+import { styled, keyframes } from "styled-components";
+
+interface CardProps {
+  index: number
+}
+
+const slideInAnimation = keyframes`
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`
   display: grid;
@@ -9,7 +24,7 @@ export const Container = styled.div`
   margin-top: 8.8rem;
 `
 
-export const Card = styled.div`
+export const Card = styled.div<CardProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,4 +43,11 @@ export const Card = styled.div`
     
     color: ${({theme}) => theme.COLORS.WHITE_100};
   }
+
+  opacity: 0;
+
+  animation: ${slideInAnimation} 0.5s ease-in-out;
+
+  animation-delay: ${({ index }) => index * 0.2}s;
+  animation-fill-mode: forwards;
 `
