@@ -17,7 +17,6 @@ export const ProfileDiv = styled.div`
     border: 8px solid ${({ theme }) => theme.COLORS.GRAY_300};
   }
 
-  
   > h1 {
     font-size: 4rem;
     font-weight: 700;
@@ -25,21 +24,8 @@ export const ProfileDiv = styled.div`
     color: ${({ theme }) => theme.COLORS.WHITE_100};
 
     text-align: center;
-  }
 
-  > p {
-    font-size: 9.6rem;
-    font-weight: 900;
-
-    color: ${({ theme }) => theme.COLORS.WHITE_100};
-
-    text-align: center;
-
-    opacity: 0.3;
-
-    line-height: 9rem;
-
-    margin-top: 5.6rem;
+    position: relative;
   }
 
   > h2 {
@@ -53,6 +39,49 @@ export const ProfileDiv = styled.div`
     text-align: center;
 
     margin-bottom: 10rem;
+  }
+`;
+
+export const TitleDiv = styled.div`
+  position: relative;
+
+  width: 100%;
+  > div {
+    height: 100%;
+    filter: blur(100px);
+    width: 100%;
+    background-image: linear-gradient(
+        278deg,
+        rgba(255, 156, 84, 0.4) 0%,
+        rgba(255, 255, 255, 0.22) 45.99%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      radial-gradient(
+        104.42% 95.46% at 42.78% 42.58%,
+        #621abe 0%,
+        rgba(36, 33, 75, 0) 100%
+      );
+
+    position: absolute;
+  }
+
+  > p {
+    text-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+    opacity: 0.8;
+    backdrop-filter: blur(3px);
+
+    font-size: 9.6rem;
+    font-weight: 900;
+
+    color: ${({ theme }) => theme.COLORS.WHITE_100};
+
+    text-align: center;
+
+    opacity: 0.3;
+
+    line-height: 9rem;
+
+    margin-top: 5.6rem;
   }
 `;
 
@@ -77,5 +106,3 @@ export const SubPunchLineSpan = styled.span`
 
   margin-top: 0.8rem;
 `;
-
-

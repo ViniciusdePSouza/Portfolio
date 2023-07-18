@@ -32,8 +32,8 @@ export function Header() {
           <img src={gitHubIcon} alt="GitHub link" />
         </Link>
 
-        <LanguageButton onClick={() => handleChangeLanguage(language)}>
-            <img src={language === "pt-br" ? brazilFlag : usFlag} alt="" />
+        <LanguageButton onClick={() => handleChangeLanguage(language)} >
+            <img src={language === "pt-br" ? brazilFlag : usFlag} alt=""/>
         </LanguageButton>
       </IconsWrapper>
 

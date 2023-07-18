@@ -3,7 +3,12 @@ import { Header } from "../../components/Header";
 import { ProjectsWrapper } from "../../components/ProjectsWrapper";
 import { TechIconsWrapper } from "../../components/TechIconsWrapper";
 
-import { ProfileDiv, PunchLineSpan, SubPunchLineSpan } from "./styles";
+import {
+  ProfileDiv,
+  PunchLineSpan,
+  SubPunchLineSpan,
+  TitleDiv,
+} from "./styles";
 
 import profilePicture from "../../assets/photos/linkedin.jpg";
 
@@ -25,14 +30,18 @@ export function Home() {
 
         <img src={profilePicture} alt="Foto de perfil" />
 
-        {language === "pt-br" ? (
-          <p>
-            Desenvolvedor <br />
-            Front-end
-          </p>
-        ) : (
-          <p>Front-end Developer</p>
-        )}
+        <TitleDiv>
+          <div>
+            </div>
+            {language === "pt-br" ? (
+              <p>
+                Desenvolvedor <br />
+                Front-end
+              </p>
+            ) : (
+              <p>Front-end Developer</p>
+            )}
+        </TitleDiv>
 
         {language === "pt-br" ? (
           <PunchLineSpan>
