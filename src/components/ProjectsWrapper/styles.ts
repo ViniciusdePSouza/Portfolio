@@ -8,6 +8,16 @@ export const Container = styled.div`
   grid-row-gap: 2.4rem;
 
   margin: 12rem 0;
+
+  @media (max-width: 768px) {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    
+  }
 `;
 
 export const FormatDiv = styled.div`

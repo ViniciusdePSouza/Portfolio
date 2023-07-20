@@ -1,5 +1,13 @@
 import { styled } from "styled-components";
 
+export const Container =styled.div`
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 export const ProfileDiv = styled.div`
   width: 100%;
   max-width: 100vw;
@@ -27,19 +35,6 @@ export const ProfileDiv = styled.div`
 
     position: relative;
   }
-
-  > h2 {
-    font-size: 4rem;
-    font-weight: 700;
-
-    color: ${({ theme }) => theme.COLORS.WHITE_100};
-
-    opacity: 0.3;
-
-    text-align: center;
-
-    margin-bottom: 10rem;
-  }
 `;
 
 export const TitleDiv = styled.div`
@@ -63,6 +58,19 @@ export const TitleDiv = styled.div`
       );
 
     position: absolute;
+  }
+
+  > h2 {
+    font-size: 4rem;
+    font-weight: 700;
+
+    color: ${({ theme }) => theme.COLORS.WHITE};
+
+    opacity: 0.4;
+
+    text-align: center;
+
+    margin-bottom: 10rem;
   }
 
   > p {

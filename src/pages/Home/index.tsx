@@ -4,6 +4,7 @@ import { ProjectsWrapper } from "../../components/ProjectsWrapper";
 import { TechIconsWrapper } from "../../components/TechIconsWrapper";
 
 import {
+  Container,
   ProfileDiv,
   PunchLineSpan,
   SubPunchLineSpan,
@@ -18,7 +19,7 @@ export function Home() {
   const { language } = useTranslation();
 
   return (
-    <>
+    <Container>
       <Header />
 
       <ProfileDiv>
@@ -31,16 +32,15 @@ export function Home() {
         <img src={profilePicture} alt="Foto de perfil" />
 
         <TitleDiv>
-          <div>
-            </div>
-            {language === "pt-br" ? (
-              <p>
-                Desenvolvedor <br />
-                Front-end
-              </p>
-            ) : (
-              <p>Front-end Developer</p>
-            )}
+          <div></div>
+          {language === "pt-br" ? (
+            <p>
+              Desenvolvedor <br />
+              Front-end
+            </p>
+          ) : (
+            <p>Front-end Developer</p>
+          )}
         </TitleDiv>
 
         {language === "pt-br" ? (
@@ -67,10 +67,13 @@ export function Home() {
 
         <ProjectsWrapper />
 
-        {language === "pt-br" ? <h2>Contato</h2> : <h2>Contact</h2>}
+        <TitleDiv>
+          <div></div>
+          {language === "pt-br" ? <h2>Contato</h2> : <h2>Contact</h2>}
+        </TitleDiv>
 
         <Contact />
       </ProfileDiv>
-    </>
+    </Container>
   );
 }
