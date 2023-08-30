@@ -3,6 +3,7 @@ import { Container, FormatDiv, InfoWrapper, LinkButton, ProjectCard } from "./st
 import roleThumb from "../../assets/thumbs/role.png";
 import gymThumb from "../../assets/thumbs/gym.png";
 import dsThumb from "../../assets/thumbs/design.png";
+import aluchefs from '../../assets/aluchef.png'
 
 import { useTranslation } from "../../hooks/translationContext";
 
@@ -36,6 +37,15 @@ export function ProjectsWrapper() {
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7062799332185448448/",
       repo: "https://github.com/ViniciusdePSouza/iToddy_Gym",
       thumb: gymThumb,
+    },
+    {
+      id: 4,
+      titlePtbr: "Aluchefs",
+      titleEn: "Aluchefs",
+      techs: "React, Strapi",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7101920728089788416/",
+      repo: "https://github.com/ViniciusdePSouza/Aluchefs",
+      thumb: aluchefs,
     },
   ];
 
